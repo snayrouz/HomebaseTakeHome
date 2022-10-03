@@ -16,7 +16,20 @@ struct ContentView: View {
             HStack {
                 List {
                     ForEach(shift, id: \.name) { shift in
-                        Text(shift.role)
+                        Text("\(shift.name) (\(shift.role)) + (formattedDate) + \(shift.color)")
+                    }
+                    //.listRowBackground(shift.color)
+                }
+            }
+            .navigationTitle("Coffee Co Shifts")
+            .padding(.horizontal)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button {
+                        
+                    } label: {
+                        Text("Add Shift")
+                            .padding(.horizontal)
                     }
                 }
             }

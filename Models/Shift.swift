@@ -26,4 +26,12 @@ struct Shift: Codable {
         case endDate = "end_date"
         case color
     }
+    
+    enum Color: String, Codable {
+        case blue = "blue"
+        case green = "green"
+        case red = "red"
+    }
 }
+
+
