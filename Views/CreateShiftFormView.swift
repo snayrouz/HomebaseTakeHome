@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CreateShiftFormView: View {
+    // This is never ideal especially when the array is much larger
     @State var startDate = Date()
     @State var endDate = Date()
     @State var employees = ["Anna","Eugene", "Keyvan", "Anton"]
@@ -63,10 +64,12 @@ struct CreateShiftFormView: View {
     }
     
     func saveShift() {
+        //persist saved shift and add to [Shifts]
         print("Shift Saved")
     }
     
     func returnToShiftsList() {
+        //Navigate back to ShiftsView. If Shift is saved, should be included in ShiftsView. If Shift not saved, should not include new Shift
         print("Returning to Shift list view")
     }
 }
