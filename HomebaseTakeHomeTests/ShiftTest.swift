@@ -1,13 +1,14 @@
 //
-//  Shift.swift
+//  ShiftTest.swift
 //  HomebaseTakeHome
 //
 //  Created by Nayrouz, Samuel on 10/3/22.
 //
 
 import XCTest
+@testable import HomebaseTakeHome
 
-final class Shift: XCTestCase {
+final class ShiftTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
