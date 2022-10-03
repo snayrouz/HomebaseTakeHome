@@ -20,7 +20,9 @@ struct ContentView: View {
                     }
                     //.listRowBackground(shift.color)
                 }
+                
             }
+
             .navigationTitle("Coffee Co Shifts")
             .padding(.horizontal)
             .toolbar {

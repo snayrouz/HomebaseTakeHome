@@ -8,38 +8,65 @@
 import SwiftUI
 
 struct CreateShiftFormView: View {
+    @State var startDate = Date()
+    @State var endDate = Date()
+    @State var employees = ["Anna","Eugene", "Keyvan", "Anton"]
+    @State var roles = ["Front of House","Prep", "Cook", "Waiter"]
+    @State var colors = ["red", "blue", "green"]
+    
     var body: some View {
         NavigationView {
             Form {
-                
-                Section(header: Text("Select a shift start and end date")) {
-                    //DatePicker startDate
-                    //DatePicker endDate
+                Section(header: Text("Select a start and end date")) {
+                    DatePicker("Start Date",selection: $startDate, displayedComponents: .date)
+                    DatePicker("End Date",selection: $endDate, displayedComponents: .date)
                 }
-                
-                Section(header: Text("Select an Employee")) {
-                    //Picker allEmployees
+                Section(header: Text("Which Employee?")) {
+                    Picker("Employee", selection: $employees) {
+                        ForEach(employees, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                        .padding(.horizontal)
                 }
-                
-                Section(header: Text("Select the role")) {
-                   //Picker allRoles
+                Section(header: Text("What Role?")) {
+                    Picker("Role", selection: $employees) {
+                        ForEach(roles, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                        .padding(.horizontal)
                 }
-                
-                Section(header: Text("Coordinating Shift Color")) {
-                    //Pick allColors || or assign the colors based on the shift
+                Section(header: Text("Select your shifts corresponding color:")) {
+                    Picker("Shift Color", selection: $colors) {
+                        ForEach(colors, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                        .padding(.horizontal)
                 }
             }
-            .navigationTitle("Create A Shift")
+            .navigationTitle("Create a Shift")
+            .accessibilityIdentifier("Create a Shift")
+            
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button("Save", action: saveShift)
+                        .accessibilityIdentifier("Save Button") ///use accessibilityIdentifier for UI testing
+                }
+                ToolbarItemGroup(placement: .navigationBarLeading){
+                    Button("< Shifts", action: returnToShiftsList)
+                }
+            }
         }
     }
-}
-
-private extension CreateShiftFormView {
-    var save: some View {
-        Button("Save") {
-            dismiss()
-        }
-        .accessibilityIdentifier("saveBtn")
+    
+    func saveShift() {
+        print("Shift Saved")
+    }
+    
+    func returnToShiftsList() {
+        print("Returning to Shift list view")
     }
 }
 
