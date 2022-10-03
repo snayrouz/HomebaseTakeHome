@@ -21,6 +21,8 @@
 		B12E975E28EB665300E569EE /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E975D28EB665300E569EE /* Shift.swift */; };
 		B12E975F28EB665300E569EE /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E975D28EB665300E569EE /* Shift.swift */; };
 		B12E976128EB670D00E569EE /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E975D28EB665300E569EE /* Shift.swift */; };
+		B12E976428EB6A0900E569EE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */; };
+		B12E976528EB6A0900E569EE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		B12E975728EB657C00E569EE /* shifts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shifts.json; sourceTree = "<group>"; };
 		B12E975A28EB65EB00E569EE /* ShiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftTest.swift; sourceTree = "<group>"; };
 		B12E975D28EB665300E569EE /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		B12E971D28EB64E600E569EE = {
 			isa = PBXGroup;
 			children = (
+				B12E976228EB69EF00E569EE /* Extensions */,
 				B12E975628EB656200E569EE /* DataSource */,
 				B12E975528EB655800E569EE /* Views */,
 				B12E975428EB655100E569EE /* Models */,
@@ -109,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				B12E972928EB64E600E569EE /* HomebaseTakeHomeApp.swift */,
-				B12E972B28EB64E600E569EE /* ContentView.swift */,
 				B12E972D28EB64E800E569EE /* Assets.xcassets */,
 				B12E972F28EB64E800E569EE /* HomebaseTakeHome.entitlements */,
 				B12E973028EB64E800E569EE /* Preview Content */,
@@ -154,6 +157,7 @@
 		B12E975528EB655800E569EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B12E972B28EB64E600E569EE /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +168,14 @@
 				B12E975728EB657C00E569EE /* shifts.json */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		B12E976228EB69EF00E569EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +313,7 @@
 				B12E972C28EB64E600E569EE /* ContentView.swift in Sources */,
 				B12E975E28EB665300E569EE /* Shift.swift in Sources */,
 				B12E972A28EB64E600E569EE /* HomebaseTakeHomeApp.swift in Sources */,
+				B12E976428EB6A0900E569EE /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +324,7 @@
 				B12E975B28EB65EB00E569EE /* ShiftTest.swift in Sources */,
 				B12E975F28EB665300E569EE /* Shift.swift in Sources */,
 				B12E973C28EB64E800E569EE /* HomebaseTakeHomeTests.swift in Sources */,
+				B12E976528EB6A0900E569EE /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

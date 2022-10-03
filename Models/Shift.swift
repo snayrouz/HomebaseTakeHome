@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Shifts: Codable {
+    let shifts: [Shift]
+}
+
 struct Shift: Codable {
     let role: String
     let name: String
