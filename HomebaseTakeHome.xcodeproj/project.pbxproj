@@ -23,6 +23,12 @@
 		B12E976128EB670D00E569EE /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E975D28EB665300E569EE /* Shift.swift */; };
 		B12E976428EB6A0900E569EE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */; };
 		B12E976528EB6A0900E569EE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */; };
+		B12E976728EB769400E569EE /* CreateShiftFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976628EB769400E569EE /* CreateShiftFormView.swift */; };
+		B12E976828EB769400E569EE /* CreateShiftFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976628EB769400E569EE /* CreateShiftFormView.swift */; };
+		B12E976A28EB794A00E569EE /* NewShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976928EB794A00E569EE /* NewShift.swift */; };
+		B12E976B28EB794A00E569EE /* NewShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976928EB794A00E569EE /* NewShift.swift */; };
+		B12E976D28EB7A8F00E569EE /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976C28EB7A8F00E569EE /* Validator.swift */; };
+		B12E976E28EB7A8F00E569EE /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976C28EB7A8F00E569EE /* Validator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,9 @@
 		B12E975A28EB65EB00E569EE /* ShiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftTest.swift; sourceTree = "<group>"; };
 		B12E975D28EB665300E569EE /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
 		B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		B12E976628EB769400E569EE /* CreateShiftFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShiftFormView.swift; sourceTree = "<group>"; };
+		B12E976928EB794A00E569EE /* NewShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShift.swift; sourceTree = "<group>"; };
+		B12E976C28EB7A8F00E569EE /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				B12E975D28EB665300E569EE /* Shift.swift */,
+				B12E976928EB794A00E569EE /* NewShift.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				B12E972B28EB64E600E569EE /* ContentView.swift */,
+				B12E976628EB769400E569EE /* CreateShiftFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B12E976328EB6A0900E569EE /* Bundle-Decodable.swift */,
+				B12E976C28EB7A8F00E569EE /* Validator.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -310,8 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12E976728EB769400E569EE /* CreateShiftFormView.swift in Sources */,
 				B12E972C28EB64E600E569EE /* ContentView.swift in Sources */,
 				B12E975E28EB665300E569EE /* Shift.swift in Sources */,
+				B12E976A28EB794A00E569EE /* NewShift.swift in Sources */,
+				B12E976D28EB7A8F00E569EE /* Validator.swift in Sources */,
 				B12E972A28EB64E600E569EE /* HomebaseTakeHomeApp.swift in Sources */,
 				B12E976428EB6A0900E569EE /* Bundle-Decodable.swift in Sources */,
 			);
@@ -322,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12E975B28EB65EB00E569EE /* ShiftTest.swift in Sources */,
+				B12E976B28EB794A00E569EE /* NewShift.swift in Sources */,
 				B12E975F28EB665300E569EE /* Shift.swift in Sources */,
 				B12E973C28EB64E800E569EE /* HomebaseTakeHomeTests.swift in Sources */,
+				B12E976E28EB7A8F00E569EE /* Validator.swift in Sources */,
 				B12E976528EB6A0900E569EE /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12E976828EB769400E569EE /* CreateShiftFormView.swift in Sources */,
 				B12E976128EB670D00E569EE /* Shift.swift in Sources */,
 				B12E974828EB64E800E569EE /* HomebaseTakeHomeUITestsLaunchTests.swift in Sources */,
 				B12E975C28EB65EB00E569EE /* ShiftTest.swift in Sources */,
