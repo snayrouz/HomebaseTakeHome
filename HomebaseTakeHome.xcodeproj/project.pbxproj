@@ -16,6 +16,8 @@
 		B12E974828EB64E800E569EE /* HomebaseTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E974728EB64E800E569EE /* HomebaseTakeHomeUITestsLaunchTests.swift */; };
 		B12E975828EB657D00E569EE /* shifts.json in Resources */ = {isa = PBXBuildFile; fileRef = B12E975728EB657C00E569EE /* shifts.json */; };
 		B12E975928EB657D00E569EE /* shifts.json in Resources */ = {isa = PBXBuildFile; fileRef = B12E975728EB657C00E569EE /* shifts.json */; };
+		B12E975B28EB65EB00E569EE /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E975A28EB65EB00E569EE /* Shift.swift */; };
+		B12E975C28EB65EB00E569EE /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E975A28EB65EB00E569EE /* Shift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		B12E974528EB64E800E569EE /* HomebaseTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebaseTakeHomeUITests.swift; sourceTree = "<group>"; };
 		B12E974728EB64E800E569EE /* HomebaseTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebaseTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B12E975728EB657C00E569EE /* shifts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shifts.json; sourceTree = "<group>"; };
+		B12E975A28EB65EB00E569EE /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B12E973B28EB64E800E569EE /* HomebaseTakeHomeTests.swift */,
+				B12E975A28EB65EB00E569EE /* Shift.swift */,
 			);
 			path = HomebaseTakeHomeTests;
 			sourceTree = "<group>";
@@ -298,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12E975B28EB65EB00E569EE /* Shift.swift in Sources */,
 				B12E973C28EB64E800E569EE /* HomebaseTakeHomeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12E974828EB64E800E569EE /* HomebaseTakeHomeUITestsLaunchTests.swift in Sources */,
+				B12E975C28EB65EB00E569EE /* Shift.swift in Sources */,
 				B12E974628EB64E800E569EE /* HomebaseTakeHomeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
