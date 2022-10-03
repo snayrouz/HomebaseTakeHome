@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var shift: [Shift] = Shift.allShifts
+    @State var shifts: [Shift] = Shift.allShifts
     
     var body: some View {
         NavigationView {
             HStack {
                 List {
-                    ForEach(shift, id: \.name) { shift in
+                    ForEach(shifts, id: \.name) { shift in
                         Text("\(shift.name) (\(shift.role)) + (formattedDate) + \(shift.color)")
                     }
                     //.listRowBackground(shift.color)
