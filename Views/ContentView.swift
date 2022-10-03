@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var shift: [Shift] = Shift.allShifts
+    
     var body: some View {
         NavigationView {
             HStack {
                 List {
-                    //ForEach loop to list shifts
+                    ForEach(shift, id: \.name) { shift in
+                        Text(shift.role)
+                    }
                 }
             }
         }
