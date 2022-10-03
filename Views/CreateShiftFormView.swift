@@ -21,7 +21,8 @@ struct CreateShiftFormView: View {
                 Section(header: Text("Select a start and end date")) {
                     DatePicker("Start Date",selection: $startDate, displayedComponents: .date)
                     DatePicker("End Date",selection: $endDate, displayedComponents: .date)
-                }
+                } .accessibilityIdentifier("datePicker")
+                
                 Section(header: Text("Which Employee?")) {
                     Picker("Employee", selection: $employees) {
                         ForEach(employees, id: \.self) {
@@ -29,7 +30,9 @@ struct CreateShiftFormView: View {
                         }
                     }
                         .padding(.horizontal)
-                }
+                }.accessibilityIdentifier("employeePicker")
+                
+                
                 Section(header: Text("What Role?")) {
                     Picker("Role", selection: $employees) {
                         ForEach(roles, id: \.self) {
@@ -37,7 +40,9 @@ struct CreateShiftFormView: View {
                         }
                     }
                         .padding(.horizontal)
-                }
+                }.accessibilityIdentifier("rolePicker")
+                
+                
                 Section(header: Text("Select your shifts corresponding color:")) {
                     Picker("Shift Color", selection: $colors) {
                         ForEach(colors, id: \.self) {
@@ -45,8 +50,9 @@ struct CreateShiftFormView: View {
                         }
                     }
                         .padding(.horizontal)
-                }
+                }.accessibilityIdentifier("shiftColorPicker")
             }
+            
             .navigationTitle("Create a Shift")
             .navigationBarTitleDisplayMode(.inline)
             .accessibilityIdentifier("createShiftNavTitle")

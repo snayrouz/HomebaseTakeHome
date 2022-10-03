@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Shifts: Codable {
-    let shifts: [Shift]
-}
+// I messed up with the JSON file. I shouldn't need the allShifts constant if I have a Shifts struct that contains all Shifts.
+//struct Shifts: Codable {
+//    let shifts: [Shift]
+//}
 
 struct Shift: Codable {
     let role: String

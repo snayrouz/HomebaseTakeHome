@@ -31,6 +31,7 @@
 		B12E976E28EB7A8F00E569EE /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E976C28EB7A8F00E569EE /* Validator.swift */; };
 		B12E977428EB823D00E569EE /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E977328EB823D00E569EE /* CustomDateFormatter.swift */; };
 		B12E977528EB823D00E569EE /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E977328EB823D00E569EE /* CustomDateFormatter.swift */; };
+		B12E977728EB88FE00E569EE /* CreateShiftFormViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12E977628EB88FE00E569EE /* CreateShiftFormViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B12E976928EB794A00E569EE /* NewShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewShift.swift; sourceTree = "<group>"; };
 		B12E976C28EB7A8F00E569EE /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		B12E977328EB823D00E569EE /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		B12E977628EB88FE00E569EE /* CreateShiftFormViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShiftFormViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				B12E974528EB64E800E569EE /* HomebaseTakeHomeUITests.swift */,
 				B12E974728EB64E800E569EE /* HomebaseTakeHomeUITestsLaunchTests.swift */,
+				B12E977628EB88FE00E569EE /* CreateShiftFormViewTests.swift */,
 			);
 			path = HomebaseTakeHomeUITests;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12E976828EB769400E569EE /* CreateShiftFormView.swift in Sources */,
+				B12E977728EB88FE00E569EE /* CreateShiftFormViewTests.swift in Sources */,
 				B12E976128EB670D00E569EE /* Shift.swift in Sources */,
 				B12E974828EB64E800E569EE /* HomebaseTakeHomeUITestsLaunchTests.swift in Sources */,
 				B12E975C28EB65EB00E569EE /* ShiftTest.swift in Sources */,
