@@ -47,7 +47,8 @@ struct CreateShiftFormView: View {
                 }
             }
             .navigationTitle("Create a Shift")
-            .accessibilityIdentifier("Create a Shift")
+            .navigationBarTitleDisplayMode(.inline)
+            .accessibilityIdentifier("createShiftNavTitle")
             
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {

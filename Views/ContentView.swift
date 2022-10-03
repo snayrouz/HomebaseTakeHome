@@ -24,6 +24,7 @@ struct ContentView: View {
             }
 
             .navigationTitle("Coffee Co Shifts")
+            .accessibilityIdentifier("shiftListTitle")
             .padding(.horizontal)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
@@ -32,6 +33,7 @@ struct ContentView: View {
                     } label: {
                         Text("Add Shift")
                             .padding(.horizontal)
+                            .accessibilityIdentifier("addShiftBtn")
                     }
                 }
             }
